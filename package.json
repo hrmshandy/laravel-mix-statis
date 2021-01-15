@@ -1,0 +1,32 @@
+{
+    "name": "laravel-mix-statis",
+    "version": "1.0.0",
+    "description": "Laravel Mix plugin for Statis build tasks",
+    "license": "MIT",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/levelup/laravel-mix-statis"
+    },
+    "author": "Sandi Hermawan",
+    "homepage": "https://github.com/levelup/laravel-mix-statis",
+    "bugs": "https://github.com/levelup/laravel-mix-statis/issues",
+    "keywords": [
+        "statis",
+        "laravel",
+        "laravel-mix",
+        "laravel-mix-plugin"
+    ],
+    "dependencies": {
+        "browser-sync": "^2.26.7",
+        "browser-sync-webpack-plugin": "^2.2.2",
+        "extra-watch-webpack-plugin": "^1.0.3",
+        "hasbin": "^1.2.3",
+        "node-cmd": "^3.0.0",
+        "tapable": "^1.1.3",
+        "yargs": "^15.3.1"
+    },
+    "peerDependencies": {
+        "laravel-mix": "^4.0||^5.0"
+    }
+}
