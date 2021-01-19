@@ -83,7 +83,7 @@ class Statis {
 
         return new class {
             apply(compiler) {
-                compiler.hooks.statisDone = new SyncHook([]);
+                const statisDone = new SyncHook([]);
 
                 compiler.hooks.done.tap('Statis Webpack Plugin', () => {
                     return command.get(`${bin} build -q ${env}`, (error, stdout, stderr) => {
@@ -93,7 +93,7 @@ class Statis {
                             browserSyncInstance.reload();
                         }
 
-                        compiler.hooks.statisDone.call();
+                        statisDone.call();
                     });
                 });
             }
